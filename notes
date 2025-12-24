@@ -1,3 +1,47 @@
 Make a file on desktop
 npm create-expo-appName@latest
 for using rfce shortcuts we will install an extention like es7+ 
+
+
+for Making build (for Google package name)
+
+(Crated Account at Expo.dev) run eas login =>Login with credentials
+run => eas init (Project appeared on Dashboard)
+
+eas build:configure => Create eas.json
+
+eas build -p android
+
+package name will come in app.json file
+
+eas credentials for sha 1 for Google
+
+expo-dev-client is mandatory for build in development (apk like =>app in real time thruogh Expo website)
+
+adding this to plugin is important "@react-native-google-signin/google-signin"
+
+we have to make both web-client and android in google console/credentails and then paste the web-client id in the code not the android as expo uses web under the hood
+
+                            THE PROBLEM OF PRISMA THAT TOOK 2 DAYS
+Sab masly ki Jarr TypeScript ka install na krna tha becasue prisma ts use kr rahi thi 
+or mein js phir us ky baad versions ka masla tha then documentation na parhna
+
+
+router.push for navigating from 1 route to another route
+
+
+# LMS env 
+# VITE_FIREBASE_API="AIzaSyBOUOBZRgXGaw0WguZpCukqcCajwaO3ZVs"
+# supabase=sXMY7r&Jgu@?AWZ
+# EXPO_PUBLIC_JWT_SECRET_KEY="ExpoPublicJWTSecretKey"
+# EXPO_PUBLIC_SERVER_URI="http://10.96.46.85:3000"
+
+
+# EXPO_PUBLIC_GITHUB_CLIENT_SECRET="286d4e5f607c69e1aa827995f68076bd7bff5cfb"
+# EXPO_PUBLIC_GITHUB_CLIENT_ID="Ov23liwSEQyYAhwJYBna"
+
+# server env 
+# DATABASE_URL="mongodb+srv://syedshabbarraza207:2071975@cluster0.zdgv7.mongodb.net/LMS"
+# PORT=3000
+# JWT_SECRET_KEY="ExpoPublicJWTSecretKey"
+# JWT_ACCESS_TOKEN_SECRET="JWTAccessTokenSecret"
