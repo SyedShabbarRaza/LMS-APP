@@ -68,31 +68,31 @@ app.get("/me", isAuthenticated, async (req, res, next) => {
 });
 
 // // get courses
-// app.get("/get-courses", async (req, res, next) => {
-//   try {
-//     const courses = await prisma.course.findMany({
-//       include: {
-//         courseData: {
-//           include: {
-//             links: true,
-//           },
-//         },
-//         benefits: true,
-//         prerequisites: true,
-//       },
-//     });
+app.get("/get-courses", async (req, res, next) => {
+  try {
+    const courses = await prisma.course.findMany({
+      include: {
+        courseData: {
+          include: {
+            links: true,
+          },
+        },
+        benefits: true,
+        prerequisites: true,
+      },
+    });
 
-//     res.status(201).json({
-//       success: true,
-//       courses,
-//     });
-//   } catch (error) {
-//     res.status(500).json({
-//       success: false,
-//       error: error.message,
-//     });
-//   }
-// });
+    res.status(201).json({
+      success: true,
+      courses,
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      error: error.message,
+    });
+  }
+});
 
 // // fetch questions
 // app.get(

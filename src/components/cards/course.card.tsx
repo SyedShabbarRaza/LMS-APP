@@ -43,14 +43,14 @@ export default function CourseCard({ item }: { item: CourseType }) {
       >
         <Image
           source={{
-            uri:
-              item.slug ===
-              "multi-vendor-mern-stack-e-commerce-project-with-all-functionalities-absolutely-for-beginners"
-                ? "https://res.cloudinary.com/dwp4syk3r/image/upload/v1713574266/TMECA_yddc73.png"
-                : item.slug ===
-                  "build-your-mobile-app-development-career-with-react-native"
-                ? "https://res.cloudinary.com/dkg6jv4l0/image/upload/v1731448241/thumbnail_jwi5xo.png"
-                : "https://res.cloudinary.com/dkg6jv4l0/image/upload/v1711468889/courses/spe7bcczfpjmtsdjzm6x.png",
+            uri: item.thumbnail
+              // item.slug ===
+              // "multi-vendor-mern-stack-e-commerce-project-with-all-functionalities-absolutely-for-beginners"
+              //   ? "https://res.cloudinary.com/dwp4syk3r/image/upload/v1713574266/TMECA_yddc73.png"
+              //   : item.slug ===
+              //     "build-your-mobile-app-development-career-with-react-native"
+              //   ? "https://res.cloudinary.com/dkg6jv4l0/image/upload/v1731448241/thumbnail_jwi5xo.png"
+              //   : "https://res.cloudinary.com/dkg6jv4l0/image/upload/v1711468889/courses/spe7bcczfpjmtsdjzm6x.png",
           }}
           resizeMode="contain"
           style={{
